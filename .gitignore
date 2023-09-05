@@ -1,0 +1,47 @@
+#backend_S3 ignore
+modules/backend_S3/.terraform/
+
+modules/backend_S3/.terraform.lock.hcl
+
+modules/backend_S3/terraform.tfstate
+
+#Seoul infra ignore
+modules/Seoul-infra/terraform.tfstate
+
+modules/Seoul-infra/.terraform/
+
+modules/Sinagpore-infra/.terraform/
+
+#Singapore infra ignore
+modules/Sinagpore-infra/.terraform.lock.hcl
+
+modules/Sinagpore-infra/terraform.tfstate
+
+.terraform/
+#Seoul Db ignore
+modules/Seoul-infra/SeoulDB/.terraform/
+
+modules/Seoul-infra/SeoulDB/.terraform.lock.hcl
+
+modules/Seoul-infra/SeoulDB/terraform.tfstate
+
+#Singapore Db ignore
+modules/Singapore-infra/SingaporeDB/.terraform.lock.hcl
+
+modules/Singapore-infra/SingaporeDB/.terraform/
+
+modules/Singapore-infra/SingaporeDB/terraform.state
+
+#globalservice ignore
+modules/GlobalService/.terraform/
+
+modules/GlobalService/terraform.tfstate
+
+modules/GlobalService/.terraform.lock.hcl
+
+#TGW peering ignore
+modules/TGW_Peering_connect/.terraform
+
+modules/TGW_Peering_connect/terraform.tfstate
+
+modules/TGW_Peering_connect/.terraform.lock.hcl

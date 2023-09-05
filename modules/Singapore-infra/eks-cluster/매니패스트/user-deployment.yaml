@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: interface-user
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: interface-user
+  template:
+    metadata:
+      labels:
+        app: interface-user
+    spec:
+      containers:
+        - name: demo-nodejs-backend
+          image: 138778713921.dkr.ecr.ap-northeast-2.amazonaws.com/user-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9002
